@@ -113,3 +113,14 @@ textarea {
 #ui-datepicker-div{
   z-index:2!important;
 }
+
+#box-hight-level{
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-level{
+  height: 500px;
+  width:200px;
+  background-color: red;
+}
