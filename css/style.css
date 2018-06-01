@@ -124,3 +124,17 @@ textarea {
   width:200px;
   background-color: red;
 }
+
+#step-hight-level{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.step-level{
+  height: 200px;
+  width:200px;
+  background-color: red;
+  margin: auto;
+}
