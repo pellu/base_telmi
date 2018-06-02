@@ -61,22 +61,22 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 .parent{display: table;}
-.child{display: table-cell;vertical-align: middle;
-}
+.child{display: table-cell;vertical-align: middle;}
+  body{overflow-x: hidden;overflow-y: hidden;}
 </style>
 </head>
 <header>
 </header>
 <section>
   <div class="row">
-    <div class="col-sm-4 parent" style="background-color:white;height: 100%;  min-height: 100vh;">
+    <div class="col-sm-4 parent" style="background-color:white;height: 100%;min-height: 100vh;">
       <div class="child" style="height: 30%;vertical-align: middle;text-align: center;">
         <img src="img/avatar.png" class="img-responsive center-block" style="width: 60%;">
         <h1 style="font-size: 20px;font-weight: bold;margin-top: 15%;">Bienvenue</h1>
         <h2 style="font-family:'SourceSansPro-SemiBold';">Pelluard jordan</h2>
       </div>
     </div>
-    <div class="col-sm-8" style="background-color:#1d899b;height: 100%;  min-height: 100vh;">
+    <div class="col-sm-8" style="background-color:#1d899b;height: 100%;min-height: 100vh;">
       <div class="col-sm-2">
       </div>
       <div class="col-sm-6 parent" style="height: 100%;  min-height: 100vh;">
@@ -93,9 +93,9 @@
                   <input type="text" name="prenom" class="form-control" placeholder="Prénom">
                 </div>
                 <div class="form-group has-feedback">
+                  <label>Tranche d'âge</label>
                   <select class="form-control selectpicker">
-                    <option disabled selected>Tranche d'âge</option>
-                    <option>3/6</option>
+                    <option selected>3/6</option>
                     <option>7/10</option>
                     <option>11/15</option>
                   </select>
@@ -112,7 +112,8 @@
                   <label>Mot de passe</label>
                   <input type="password" class="form-control" placeholder="Mot de passe">
                 </div>
-                <a href="home.html" class="btn btn-primary btn-block btn-flat" style="width: 50%;text-align: center;">Créer le compte</a>
+                <a href="home.html" class="btn btn-primary btn-block" style="width: 50%;text-align: center;background-color:#192b49;border:0px;font-size: 16px;border-radius: 8px;margin:0 auto;
+    display:block;">Créer le compte</a>
               </div>
             </div>
           </form>
