@@ -60,22 +60,40 @@
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://localhost/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+.parent{display: table;}
+.child{display: table-cell;vertical-align: middle;}
+body{overflow-x: hidden;overflow-y: hidden;}
 </style>
 </head>
 <header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#"><i style="font-size: 25px;" class="fa fa-chevron-left" aria-hidden="true"></i></a>
-      </div>
-      <div class="nav navbar-nav navbar-right">
-        <a class="navbar-brand" href="home.html"><i style="font-size: 25px;" class="fa fa-home" aria-hidden="true"></i></a>
+</header>
+<section>
+  <div class="row">
+    <div class="col-sm-4 parent" style="height: 100%;min-height: 100vh;">
+      <div class="child" style="height: 30%;vertical-align: middle;text-align: center;">
+        <img src="img/telmi-mascotte.png" class="img-responsive center-block" style="width: 35%;">
+        <div class="">
+          <a href="#"><img src="img/Export/resultat.png"></a>
+          <a href="#"><img src="img/Export/profil.png"></a>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-
-<footer>
-</footer>
+    <div class="col-sm-8" style="height: 100%;min-height: 100vh;">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-6 parent" style="height: 100%; min-height: 100vh;">
+        <div class="child" style="height: 30%;vertical-align: middle;color:#222222;font-family: SourceSansPro-SemiBold;font-size: 25px;text-align: center;">
+          <p>Bonjour,<br>je m'appelle Telmi</p>
+          <p>Je serais ton compagnon<br>durant toute l'aventure.</p>
+          <a href="#"><img src="img/Export/play.png" style="width: 80%;"></a>
+          <p style="font-size: 35px;">C'est parti !</p>
+        </div>
+        <div class="col-sm-4">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+  </footer>
 </body>
 </html>
