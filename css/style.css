@@ -116,11 +116,7 @@ textarea {
 
 /* Pour la page niveaux.html */
 #box-hight-level{
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  width: 1000%;
 }
 
 .box-level{
@@ -128,13 +124,14 @@ textarea {
   width:200px;
   list-style: none;
   background-color: red;
+  display: inline-block;
 }
 
 /* Pour la page etapes.html */
 #step-hight-level{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 84%;
 }
 
 .step-level{
@@ -145,4 +142,22 @@ textarea {
   background-color: red;
   margin: auto;
   margin-top: 15px;
+}
+
+li .link-box-level, li .link-step-level{
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+#header-niveaux{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+
+}
+
+#test{
+  margin-top: 1000px;
+
 }
