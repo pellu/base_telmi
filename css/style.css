@@ -117,7 +117,7 @@ textarea {
 /* Pour la page niveaux.html */
 #box-hight-level{
   width: 1000%;
-
+  margin-top: -35px;
 }
 
 .box-level{
