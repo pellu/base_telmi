@@ -60,51 +60,70 @@
   src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(http://localhost/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+.parent{display: table;}
+.child{display: table-cell;vertical-align: middle;
+}
 </style>
 </head>
 <header>
 </header>
-<div class="content-wrapper" style="width: 50%; margin: 7% auto;">
-  <section class="content-header">
-    <div class="register-box">
-      <div class="register-logo" style="width: 50%;margin: 7% auto;text-align: center;font-size: 25px;">
-        <img src="img/logo-telmi-mascotte.png" class="img-responsive">
+<section>
+  <div class="row">
+    <div class="col-sm-4 parent" style="background-color:white;height: 100%;  min-height: 100vh;">
+      <div class="child" style="height: 30%;vertical-align: middle;text-align: center;">
+        <img src="img/avatar.png" class="img-responsive center-block" style="width: 60%;">
+        <h1 style="font-size: 20px;font-weight: bold;margin-top: 15%;">Bienvenue</h1>
+        <h2 style="font-family:'SourceSansPro-SemiBold';">Pelluard jordan</h2>
       </div>
-      <div class="register-box-body">
-        <form action="home.html" method="#" name="inscription">
-          <div class="form-group has-feedback">
-            <label>Nom</label>
-            <input type="text" name="email" class="form-control">
-          </div>
-          <div class="form-group has-feedback">
-            <label>Prénom</label>
-            <input type="text" name="email" class="form-control">
-          </div>
-          <div class="form-group has-feedback">
-            <label>ID praticien</label>
-            <input type="text" name="idpraticien" class="form-control">
-          </div>
-          <div class="form-group has-feedback">
-            <label>Email</label>
-            <input type="email" name="email" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Mot de passe</label>
-            <input type="password" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Mot de passe vérification</label>
-            <input type="password" class="form-control">
-          </div>
-          <a href="home.html" class="btn btn-primary btn-block btn-flat">Je créer mon compte</a>
-          <a href="inscription.html" class="btn btn-primary btn-block btn-flat">Je me connecte</a>
+    </div>
+    <div class="col-sm-8" style="background-color:#1d899b;height: 100%;  min-height: 100vh;">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-6 parent" style="height: 100%;  min-height: 100vh;">
+        <div class="child" style="height: 30%;vertical-align: middle;color:white;">
+          <div class="register-box">
+            <div class="register-box-body">
+              <form action="home.html" method="#" name="inscription">
+                <div class="form-group has-feedback">
+                  <label>Nom</label>
+                  <input type="text" name="nom" class="form-control" placeholder="Nom">
+                </div>
+                <div class="form-group has-feedback">
+                  <label>Prénom</label>
+                  <input type="text" name="prenom" class="form-control" placeholder="Prénom">
+                </div>
+                <div class="form-group has-feedback">
+                  <select class="form-control selectpicker">
+                    <option disabled selected>Tranche d'âge</option>
+                    <option>3/6</option>
+                    <option>7/10</option>
+                    <option>11/15</option>
+                  </select>
+                </div>
+                <div class="form-group has-feedback">
+                  <label>ID praticien</label>
+                  <input type="text" name="idpraticien" class="form-control" placeholder="ID praticien">
+                </div>
+                <div class="form-group has-feedback">
+                  <label>Email</label>
+                  <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label>Mot de passe</label>
+                  <input type="password" class="form-control" placeholder="Mot de passe">
+                </div>
+                <a href="home.html" class="btn btn-primary btn-block btn-flat" style="width: 50%;text-align: center;">Créer le compte</a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </form>
+    </div>
+    <div class="col-sm-4">
+    </div>
   </div>
 </div>
 </section>
-</div>
 <footer>
 </footer>
 </body>
