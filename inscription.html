@@ -64,40 +64,46 @@
 </head>
 <header>
 </header>
-<div class="content-wrapper" style="width: 20%; margin: 7% auto;">
+<div class="content-wrapper" style="width: 50%; margin: 7% auto;">
   <section class="content-header">
     <div class="register-box">
-      <div class="register-logo" style="text-align: center;font-size: 25px;">
-        <b>TEL</b>MI
+      <div class="register-logo" style="width: 50%;margin: 7% auto;text-align: center;font-size: 25px;">
+        <img src="img/logo-telmi-mascotte.png" class="img-responsive">
       </div>
       <div class="register-box-body">
-        <p class="login-box-msg" style="text-align: center;"><a href="connexion.html">Connexion</a> | Inscription</p>
-        <form action="home.html" method="post" name="connexion">
+        <form action="home.html" method="#" name="inscription">
           <div class="form-group has-feedback">
-            <label>Courriel</label>
-            <input type="email" name="email" class="form-control" value="" placeholder="Courriel" required data-error="Courriel obligatoire">
-            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-            <div class="help-block with-errors"></div>
+            <label>Nom</label>
+            <input type="text" name="email" class="form-control">
           </div>
-          <div id="affichage_tablette"></div>
           <div class="form-group has-feedback">
+            <label>Prénom</label>
+            <input type="text" name="email" class="form-control">
+          </div>
+          <div class="form-group has-feedback">
+            <label>ID praticien</label>
+            <input type="text" name="idpraticien" class="form-control">
+          </div>
+          <div class="form-group has-feedback">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control">
+          </div>
+          <div class="form-group">
             <label>Mot de passe</label>
-            <input type="password" class="form-control" name="pass" id="pass" placeholder="Mot de passe">
-            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-            <div class="help-block with-errors"></div>
+            <input type="password" class="form-control">
           </div>
-          <div class="row">
-            <div class="col-xs-6">
-              <button type="button" data-toggle="modal" data-target="#motdepasse_perdu" class="btn btn-primary btn-block btn-flat">Mot de passe oublié?</button>
-            </div>
-            <div class="col-xs-6">                          
-              <button type="submit" id="connexion" name="connexion" class="btn btn-primary btn-block btn-flat">Connexion</button>
-            </div>
+          <div class="form-group">
+            <label>Mot de passe vérification</label>
+            <input type="password" class="form-control">
           </div>
-        </form>
+          <a href="home.html" class="btn btn-primary btn-block btn-flat">Je créer mon compte</a>
+          <a href="inscription.html" class="btn btn-primary btn-block btn-flat">Je me connecte</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </form>
+  </div>
+</div>
+</section>
 </div>
 <footer>
 </footer>
