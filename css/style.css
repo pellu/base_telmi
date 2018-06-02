@@ -114,17 +114,23 @@ textarea {
   z-index:2!important;
 }
 
+/* Pour la page niveaux.html */
 #box-hight-level{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .box-level{
   height: 500px;
   width:200px;
+  list-style: none;
   background-color: red;
 }
 
+/* Pour la page etapes.html */
 #step-hight-level{
   margin-left: auto;
   margin-right: auto;
