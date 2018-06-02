@@ -174,9 +174,16 @@ li .link-box-level, li .link-step-level{
   position: fixed;
   top: 0px;
   width: 100%;
-
 }
 
 #test{
   margin-top: 100px;
+}
+
+body{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../img/background.png");
+  background-size: 1920 1080;
+  background-position: center;
 }
